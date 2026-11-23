@@ -1,0 +1,9 @@
+{
+  "extends": ["group:recommended"],
+  "rebaseWhen": "conflicted",
+  "packageRules": [
+    { "matchPackageNames": ["/^@types\\//"], "groupName": "type definitions" },
+    { "matchPackageNames": ["/^@elastic\\//"], "groupName": "elasticsearch clients" }
+  ],
+  "schedule": ["after 7pm every weekday", "every weekend"]
+}
